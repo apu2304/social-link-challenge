@@ -1,0 +1,89 @@
+:root {
+    --night: #141414ff;
+    --eerie-black: #1F1F1Fff;
+    --jet: #333333ff;
+    --silver: #B6B6B6ff;
+    --lime: #C4F829ff;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+h1,h3,p{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    font-family: "inter";
+    place-items: center;
+    grid-template-rows: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--night);
+}
+.card{
+    background-color: var(--eerie-black);
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.card img{
+   width: 30%;
+   margin-top: 20px;
+   border-radius: 50%;
+}
+.card h1{
+    color: var(--silver);
+    margin: 20px;
+}
+.card h3{
+    color: var(--lime);
+    margin-bottom: 20px;
+}
+.card p{
+    color: var(--silver);
+    margin-bottom: 20px;
+}
+.button{
+    display: grid;
+    place-items: center;
+}
+.button button{
+    display: block;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: var(--jet);
+    color: var(--silver);
+    font-family: "inter";
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-out;
+}
+.button button:hover,
+.button button:active{
+    background-color: var(--lime);
+    color: var(--night);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--silver);
+}
+
+.attribution a {
+    color: var(--lime);
+}
+@media screen and (min-width: 375px) {
+    .card{
+        width: 90%;
+    }
+}
